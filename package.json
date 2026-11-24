@@ -1,0 +1,36 @@
+{
+  "name": "folder-snapshot",
+  "version": "1.0.1",
+  "description": "A lightweight CLI tool to generate directory tree snapshots",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "folder-snapshot": "./src/cli.js"
+  },
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/cli.js",
+    "dev": "node src/cli.js .",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "folder",
+    "directory",
+    "tree",
+    "snapshot",
+    "filesystem",
+    "cli",
+    "directory-structure"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
